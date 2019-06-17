@@ -9,8 +9,9 @@ import sys
 memo = []
 # Complete the stepPerms function below.
 def stepPerms(n):
-    if memo[n] != -1:
-        return memo[n]
+    if memo:
+        if memo[n] != -1:
+            return memo[n]
     if n == 1:
         return 1
     elif n == 2:
